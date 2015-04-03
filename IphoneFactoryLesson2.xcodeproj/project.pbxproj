@@ -15,6 +15,8 @@
 		9BB46B601ACDFE440019B81E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB46B5F1ACDFE440019B81E /* Images.xcassets */; };
 		9BB46B631ACDFE440019B81E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BB46B611ACDFE440019B81E /* LaunchScreen.xib */; };
 		9BB46B6F1ACDFE440019B81E /* IphoneFactoryLesson2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB46B6E1ACDFE440019B81E /* IphoneFactoryLesson2Tests.m */; };
+		9BB46B7A1ACDFEB20019B81E /* IphoneFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB46B791ACDFEB20019B81E /* IphoneFactory.m */; };
+		9BB46B811ACE0CA50019B81E /* FakeIphoneFactory2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB46B801ACE0CA50019B81E /* FakeIphoneFactory2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		9BB46B681ACDFE440019B81E /* IphoneFactoryLesson2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IphoneFactoryLesson2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB46B6D1ACDFE440019B81E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BB46B6E1ACDFE440019B81E /* IphoneFactoryLesson2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IphoneFactoryLesson2Tests.m; sourceTree = "<group>"; };
+		9BB46B781ACDFEB20019B81E /* IphoneFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IphoneFactory.h; sourceTree = "<group>"; };
+		9BB46B791ACDFEB20019B81E /* IphoneFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IphoneFactory.m; sourceTree = "<group>"; };
+		9BB46B7F1ACE0CA50019B81E /* FakeIphoneFactory2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeIphoneFactory2.h; sourceTree = "<group>"; };
+		9BB46B801ACE0CA50019B81E /* FakeIphoneFactory2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeIphoneFactory2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 		9BB46B431ACDFE430019B81E = {
 			isa = PBXGroup;
 			children = (
+				9BB46B7B1ACDFEBE0019B81E /* MyClasses */,
 				9BB46B4E1ACDFE440019B81E /* IphoneFactoryLesson2 */,
 				9BB46B6B1ACDFE440019B81E /* IphoneFactoryLesson2Tests */,
 				9BB46B4D1ACDFE440019B81E /* Products */,
@@ -120,6 +127,17 @@
 				9BB46B6D1ACDFE440019B81E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9BB46B7B1ACDFEBE0019B81E /* MyClasses */ = {
+			isa = PBXGroup;
+			children = (
+				9BB46B781ACDFEB20019B81E /* IphoneFactory.h */,
+				9BB46B791ACDFEB20019B81E /* IphoneFactory.m */,
+				9BB46B7F1ACE0CA50019B81E /* FakeIphoneFactory2.h */,
+				9BB46B801ACE0CA50019B81E /* FakeIphoneFactory2.m */,
+			);
+			name = MyClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB46B811ACE0CA50019B81E /* FakeIphoneFactory2.m in Sources */,
 				9BB46B581ACDFE440019B81E /* IphoneFactoryLesson2.xcdatamodeld in Sources */,
 				9BB46B551ACDFE440019B81E /* AppDelegate.m in Sources */,
 				9BB46B5B1ACDFE440019B81E /* ViewController.m in Sources */,
 				9BB46B521ACDFE440019B81E /* main.m in Sources */,
+				9BB46B7A1ACDFEB20019B81E /* IphoneFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

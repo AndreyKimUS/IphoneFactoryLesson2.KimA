@@ -4,9 +4,16 @@
 //
 //  Created by Андрей Ким on 03.04.15.
 //  Copyright (c) 2015 Андрей Ким. All rights reserved.
+//Развить проект созданый на первом занятии (или создать новый), сделать алгоритм фабрики. Создать дочерний класс, реализовать наследование. В вызове методов использовать аргументы, а в качестве аргументов рассмотренные примитивные типы.
+//Реализовать полиморфизм.
 //
+//К следующему уроку прочитать про свойства, класс NSString, класс NSArray
+
+
 
 #import "AppDelegate.h"
+#import "FakeIphoneFactory2.h"
+#import "IphoneFactory.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +23,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    IphoneFactory * trueFactory = [[IphoneFactory alloc ]init];
+    FakeIphoneFactory2 * fakeFactory = [[FakeIphoneFactory2 alloc] init];
+    
+    [trueFactory assemblePhone];
+    [fakeFactory assemblePhone];
+    
+   NSLog(@"Produce one fake phone in %@ box", [fakeFactory setBox]);
+    // Здесь я когда обращался к методу setBox - то хотел просто чтобы он вернул значение return, а он полностью весь метод выполнил.
+    // Как получить доступ только к return???
+    
+    
+    
     // Override point for customization after application launch.
     return YES;
 }
